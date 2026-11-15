@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Programme Info Server</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Study Programme Info Server</h1>
+  <p>
+    This is a small information server for a made-up study programm.
+    It serves this page, a few text routes and a handful of JSON API routes.
+    Use the buttons below try every API route and see the status code
+    and the body that the server sends back.
+  </p>
+
+  <div class="buttons">
+    <button data-path="/api/courses">GET /api/courses</button>
+    <button data-path="/api/status">GET /api/status</button>
+    <button data-path="/api/headers">GET /api/headers</button>
+    <button data-path="/api/subscribe" data-method="POST">POST /api/subscribe</button>
+    <button data-path="/api/admin">GET /api/admin</button>
+    <button data-path="/api/stats">GET /api/stats</button>
+    <button data-path="/does-not-exist">GET /does-not-exist</button>
+  </div>
+
+  <h2>Response</h2>
+  <pre id="output">Click a button...</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
